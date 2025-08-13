@@ -1,4 +1,6 @@
 :root {
+  --outfit-font: 'Outfit', sans-serif;
+
   --white: hsl(0, 0%, 100%);
   --slate-300: hsl(212, 45%, 89%);
   --slate-500: hsl(216, 15%, 48%);
@@ -10,7 +12,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--outfit-font);
   background-color: var(--slate-300);
   overflow: hidden;
 }
@@ -24,6 +26,12 @@ html {
   border-radius: 1.5rem;
   width: 315px;
   height: 484px;
+  gap:1.5rem;
+  padding: 10px 18px 45px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -32,16 +40,6 @@ html {
   top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.qr-code {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap:1.5rem;
-  padding: 18px 18px 45px 18px;
 }
 
 .qr-image {
